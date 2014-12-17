@@ -2,10 +2,24 @@
 
 angular.module('siteApp')
   .controller('NavbarCtrl', function ($scope, $location) {
-    $scope.menu = [{
-      'title': 'Home',
-      'link': '/'
-    }];
+    $scope.menu = [
+      {
+        'title': 'Home',
+        'link': '/'
+      },
+      {
+        'title': 'Resume',
+        'link': '/resume'
+      }, 
+      {
+        'title': 'Projects',
+        'link': '/projects'
+      },
+      {
+        'title': 'Network',
+        'link': '/network'
+      }
+    ];
 
     $scope.isCollapsed = true;
 
